@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+  .align-elements {
+    @apply w-full max-w-6xl mx-auto px-4;
+  }
+}
+
+a:hover {
+  @apply opacity-80;
+}
