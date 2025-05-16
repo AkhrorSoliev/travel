@@ -1,4 +1,4 @@
-import { Oswald } from "next/font/google";
+import { Oswald, Poppins } from "next/font/google";
 import "./globals.css";
 
 import Header from "../components/Header";
@@ -10,13 +10,11 @@ const OswaldFont = Oswald({
   subsets: ["latin", "cyrillic"],
 });
 
-
 // Poppins font is used for the main text
 const PoppinsFont = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
-
 
 export const metadata = {
   title: "Create Next App",
@@ -26,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="h-full" lang="uz">
-      <body className={`${OswaldFont.style} flex flex-col h-full antialiased`}>
+      <body className={`${OswaldFont.style} flex h-full flex-col antialiased`}>
         <Header />
         <main className="grow">{children}</main>
         <Footer />
