@@ -1,11 +1,51 @@
 @import "tailwindcss";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 @layer components {
   .align-elements {
-    @apply w-full max-w-6xl mx-auto px-4;
+    @apply mx-auto w-full max-w-6xl px-4;
+  }
+
+  .header {
+    @apply bg-cover bg-center bg-no-repeat md:bg-fixed;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/header-bg.jpg");
+  }
+
+  .special-item {
+    @apply overflow-hidden rounded-lg;
+    img {
+      @apply transition-transform duration-300 ease-in-out;
+    }
+  }
+
+  .special-item:hover {
+    img {
+      @apply scale-110 rotate-2;
+    }
+  }
+
+  .cta {
+    @apply bg-cover bg-center bg-no-repeat md:bg-fixed;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("/images/cta-bg.jpg");
   }
 }
 
-a:hover {
+.link:hover {
   @apply opacity-80;
 }

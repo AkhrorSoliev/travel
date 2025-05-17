@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 // Oswald font is used for the headings
 const OswaldFont = Oswald({
   weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
 });
 
 // Poppins font is used for the main text
