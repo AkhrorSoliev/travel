@@ -53,7 +53,7 @@ function Header() {
         <p className="text-lg md:text-3xl">
           UNUTILMAS SAYOHATLAR SIZNI KUTMOQDA
         </p>
-        <h1 className="mb-6 text-5xl leading-tight font-bold md:text-7xl">
+        <h1 className="mb-6 text-4xl leading-tight font-bold md:text-7xl">
           <span className="uppercase">Sayohat qilamiz</span>
           <br />
           <Title />
