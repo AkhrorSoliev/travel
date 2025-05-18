@@ -7,7 +7,7 @@ import Title from "./Title";
 
 function Header() {
   return (
-    <header className="header pb-24">
+    <header className="header mb-20 pb-24">
       <div className="align-elements">
         <div className="mb-10 flex flex-col items-center gap-6 py-8 md:flex-row md:justify-between">
           <Link

@@ -30,9 +30,9 @@ function Counter() {
     <>
       <section
         data-aos="fade-up"
-        data-aos-offset="600"
+        data-aos-offset="400"
         ref={counterRef}
-        className="align-elements counter flex flex-col py-10 text-center text-white md:mb-10 md:h-[600px]"
+        className="align-elements counter flex flex-col py-10 text-center text-white md:mb-10 md:h-[700px]"
       >
         <h2
           data-aos="fade-up"
@@ -55,19 +55,19 @@ function Counter() {
         </p>
 
         <ul className="mt-10 hidden justify-between gap-10 text-3xl md:flex">
-          <li data-aos="fade-up" data-aos-offset="300" className="counter-item">
+          <li className="counter-item">
             {isVisible ? <CountUp start={0} end={100} duration={2} /> : 0} +
             <p>shaxar/tuman</p>
           </li>
-          <li data-aos="fade-up" data-aos-offset="300" className="counter-item">
+          <li data-aos-offset="300" className="counter-item">
             {isVisible ? <CountUp end={1000} duration={2} /> : 0} +
             <p>Sayohat</p>
           </li>
-          <li data-aos="fade-up" data-aos-offset="300" className="counter-item">
+          <li data-aos-offset="300" className="counter-item">
             {isVisible ? <CountUp end={121} duration={2} /> : 0} +
             <p>Yo'l ko'rsatuvchi</p>
           </li>
-          <li data-aos="fade-up" data-aos-offset="300" className="counter-item">
+          <li data-aos-offset="300" className="counter-item">
             {isVisible ? <CountUp end={1541} duration={2} /> : 0} +
             <p>tajriba</p>
           </li>

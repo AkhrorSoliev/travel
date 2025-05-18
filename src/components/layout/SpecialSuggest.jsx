@@ -10,7 +10,7 @@ function SpecialSuggest() {
     });
   }, []);
   return (
-    <section className="special-packages md:py-40">
+    <section className="special-packages">
       <div className="align-elements">
         <div className="mb-10">
           <h2 className="mb-5 text-2xl uppercase md:text-4xl">
