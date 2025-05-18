@@ -44,11 +44,11 @@ const Features = () => {
 
   return (
     <section className="">
-      <div className="align-elements grid grid-cols-1 gap-8 bg-white md:grid-cols-2">
+      <div className="align-elements grid grid-cols-1 gap-8 place-self-center bg-white text-center md:grid-cols-2">
         {features.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center"
+            className="mx-auto flex max-w-[400px] flex-col items-center"
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >

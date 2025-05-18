@@ -50,7 +50,7 @@ body {
   }
 
   section {
-    @apply py-25 md:py-40;
+    @apply py-10 md:py-40;
   }
 
   .counter-item {
