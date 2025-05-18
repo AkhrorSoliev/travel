@@ -22,7 +22,7 @@ body {
     @apply bg-cover bg-center bg-no-repeat md:bg-fixed;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/images/header-bg.jpg");
+      url("/images/header-bg.webp");
   }
 
   .special-item {
