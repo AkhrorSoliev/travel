@@ -2,6 +2,8 @@ import Link from "next/link";
 import { FaBusAlt } from "react-icons/fa";
 import PartnersSlider from "./PartnersSlider";
 import { TravelSelect } from "./TravelSelect";
+import DataPicker from "./DataPicker";
+import Title from "./Title";
 
 function Header() {
   return (
@@ -48,11 +50,13 @@ function Header() {
       </div>
 
       <div className="align-elements text-center text-white">
-        <p className="mb-3 text-lg md:text-3xl">
+        <p className="text-lg md:text-3xl">
           UNUTILMAS SAYOHATLAR SIZNI KUTMOQDA
         </p>
-        <h1 className="mb-6 text-5xl leading-tight font-bold md:text-7xl lg:text-[120px]">
-          SARGUZASHT
+        <h1 className="mb-6 text-5xl leading-tight font-bold md:text-7xl">
+          <span className="uppercase">Sayohat qilamiz</span>
+          <br />
+          <Title />
         </h1>
         <p className="mx-auto mb-8 max-w-3xl text-base md:text-xl">
           Dunyoning eng qiziqarli manzillarini tajribali jamoamiz tomonidan
@@ -60,13 +64,14 @@ function Header() {
         </p>
       </div>
       <div className="align-elements relative z-50 mb-10 md:mb-20">
-        <div className="mx-auto flex max-w-4xl flex-col gap-4 rounded-2xl bg-white p-3 md:flex-row md:p-5">
+        <div className="mx-auto flex max-w-3xl flex-col gap-4 rounded-2xl bg-white p-3 md:flex-row md:p-5">
           <TravelSelect label="Qayerdan:" />
-          <TravelSelect label="Qayerga:" />
+          <DataPicker />
           <button className="text-md cursor-pointer self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:px-5 md:py-2">
             Qidirish
           </button>
         </div>
+        -
       </div>
       <PartnersSlider />
     </header>

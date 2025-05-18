@@ -44,8 +44,39 @@ body {
       linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
       url("/images/cta-bg.jpg");
   }
+
+  img {
+    @apply object-cover;
+  }
+
+  section {
+    @apply py-40;
+  }
+
+  .counter-item {
+    @apply inline-block text-center md:grow md:border-r;
+  }
+
+  .counter-item:last-child {
+    @apply border-0;
+  }
+
+  .counter {
+    @apply bg-cover bg-center bg-no-repeat md:rounded-xl;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/images/counter-bg.jpg");
+  }
 }
 
 .link:hover {
   @apply opacity-80;
+}
+
+.data-picker {
+  @apply grow;
+}
+
+.react-datepicker-wrapper {
+  @apply w-full;
 }

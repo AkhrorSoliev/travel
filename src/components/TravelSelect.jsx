@@ -3,21 +3,21 @@
 import React from "react";
 
 import Select from "react-select";
-import { regionOptions } from "./data";
+import { tourPackages } from "./data";
 
 export const TravelSelect = ({ label }) => {
   return (
     <>
-      <label className="w-full">
+      <label className="grow">
         <span className="mb-2 inline-block">{label}</span>
         <Select
           className="basic-single"
           classNamePrefix="select"
           defaultValue={
-            regionOptions[Math.floor(Math.random() * regionOptions.length)]
+            tourPackages[Math.floor(Math.random() * tourPackages.length)]
           }
           name="region"
-          options={regionOptions}
+          options={tourPackages}
           maxMenuHeight={200}
         />
       </label>
