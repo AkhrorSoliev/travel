@@ -75,7 +75,7 @@ function Counter() {
       </section>
 
       {/* Mobile qismi */}
-      <section className="align-elements py-5" data-aos="fade-up">
+      <section className="align-elements py-5">
         <ul className="grid grid-cols-2 gap-10 text-xl md:hidden md:text-3xl">
           <li className="counter-item">
             {isVisible ? <CountUp start={0} end={100} duration={2} /> : 0}
