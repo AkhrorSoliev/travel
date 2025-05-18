@@ -40,7 +40,11 @@ function SpecialSuggest() {
             Eng katta tarix bilan birga.
           </p>
         </div>
-        <div data-aos="zoom-out" className="flex flex-col gap-5">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+          className="flex flex-col gap-5"
+        >
           <div className="relative mb-auto">
             <h2 className="absolute top-[10px] right-[10px] z-10 text-5xl text-white/50">
               02
