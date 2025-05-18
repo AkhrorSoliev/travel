@@ -19,7 +19,7 @@ body {
   }
 
   .header {
-    @apply bg-cover bg-left bg-no-repeat md:bg-fixed md:bg-center;
+    @apply bg-cover bg-center bg-no-repeat md:bg-fixed;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("/images/header-bg.webp");
