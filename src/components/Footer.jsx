@@ -1,17 +1,15 @@
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTelegram, FaBusAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
+import Logo from "./layout/Logo";
+import ContactForm from "./layout/ContactForm";
 
 function Footer() {
   return (
     <footer className="bg-zinc-900">
       <div className="align-elements">
+        <ContactForm />
         <div className="flex flex-col items-center gap-5 border-b border-white py-7 md:flex-row md:justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-3 self-center text-3xl text-white hover:opacity-80"
-          >
-            <FaBusAlt /> TRAVEL
-          </Link>
+          <Logo />
           <ul className="flex justify-center gap-5">
             <li>
               <Link href="/about" className="text-white">

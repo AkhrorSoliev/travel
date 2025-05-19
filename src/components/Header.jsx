@@ -5,18 +5,14 @@ import { TravelSelect } from "./TravelSelect";
 import DataPicker from "./DataPicker";
 import Title from "./Title";
 import LanguageSelector from "./LanguageSelector";
+import Logo from "./layout/Logo";
 
 function Header() {
   return (
     <header className="header mb-20 pb-24">
       <div className="align-elements">
         <div className="mb-10 flex flex-col items-center gap-6 py-8 md:flex-row md:justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-3 self-center text-2xl text-white hover:opacity-80 md:text-4xl"
-          >
-            <FaBusAlt /> SAYOHAT
-          </Link>
+          <Logo />
 
           <ul className="hidden justify-center gap-6 md:flex">
             <li>
