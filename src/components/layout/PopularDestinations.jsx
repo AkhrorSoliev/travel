@@ -16,7 +16,7 @@ function PopularDestinations() {
               className="popular-img rounded-xl transition duration-300 md:mb-3 md:group-hover:scale-110"
               alt=""
             />
-            <h3 className="text-3xl">Xiva</h3>
+            <h3 className="text-3xl">Marg'ilon — Rishton — Qo'qon</h3>
           </div>
           <div className="group popular-img-main relative w-[100%] overflow-hidden rounded-xl text-white md:w-[50%]">
             <img
@@ -25,10 +25,12 @@ function PopularDestinations() {
               alt=""
             />
             <div className="absolute bottom-0 p-4">
-              <h3 className="text-5xl md:mb-3">Buxoro</h3>
+              <h3 className="text-5xl md:mb-3">Samarqand + Buxoro</h3>
               <p className="mb-5">
-                ming yillik tarixga ega, islom olamining ilm va ma’rifat markazi
-                bo‘lgan muqaddas shahar.
+                Yer yuzining sayqali va Islom dinining quvvati deya ta'rif
+                berilgan betakror maskanlarni ziyorat qilishingiz uchun ajoyib
+                imkoniyat! Oilangiz va yaqinlaringiz uchun sayohat sovg'a
+                qiling!
               </p>
               <div className="flex justify-end">
                 <button className="text-md cursor-pointer self-end rounded border border-white px-3 py-1 text-white transition hover:bg-white hover:text-black md:px-5 md:py-2">
@@ -43,7 +45,7 @@ function PopularDestinations() {
               className="popular-img rounded-xl transition duration-300 md:mb-3 md:group-hover:scale-110"
               alt=""
             />
-            <h3 className="text-3xl">Samarqand</h3>
+            <h3 className="text-3xl">Qo'qon-Rishton</h3>
           </div>
         </div>
       </div>

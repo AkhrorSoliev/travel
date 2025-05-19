@@ -75,7 +75,7 @@ body {
   .popular-img-main {
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0) 30%,
       rgba(0, 0, 0, 0.9) 100%
     );
   }
