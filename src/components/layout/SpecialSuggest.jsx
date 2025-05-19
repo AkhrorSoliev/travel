@@ -1,6 +1,7 @@
 "use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 import { useEffect } from "react";
 
 function SpecialSuggest() {
@@ -37,7 +38,7 @@ function SpecialSuggest() {
             className="h-[400px] w-full rounded-xl object-bottom grayscale transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:grayscale-0 md:h-full md:w-[300px]"
           />
           <p className="absolute bottom-[10px] left-[10px] z-10 translate-y-[115%] text-3xl text-white transition duration-300 group-hover:translate-y-[0%]">
-            Eng katta tarix bilan birga.
+            Yer yuzining sayqali va Islom
           </p>
         </div>
         <div
@@ -58,7 +59,7 @@ function SpecialSuggest() {
           <div className="flex w-full flex-col items-center gap-3 md:my-0 md:flex-row md:gap-5">
             <div>
               <h2 data-aos="zoom-in" className="text-4xl md:text-6xl">
-                AFSUNLI DAM OLISH
+                Ruhingizga sayqal, dilingizga saodat!
               </h2>
             </div>
             <div
@@ -67,13 +68,15 @@ function SpecialSuggest() {
               className="flex max-w-[400px] flex-col items-start justify-between gap-2 md:gap-0"
             >
               <p className="mb-5 text-right">
-                O‘zingizni dunyoning eng go‘zal joylarida toping! Bizning
-                "Sehrli Dam Olish" paketimiz bilan 7 kun davomida tropik
-                orollarning olijanob tabiati,
+                Oila va yaqinlaringizga unutilmas sovg‘a – ma’naviy ziyorat!
+                Islom merosi bo‘lgan Samarqand va Buxoro sizni chorlamoqda!
               </p>
-              <button className="text-md cursor-pointer self-center self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:self-end md:px-5 md:py-2">
+              <Link
+                href="#footer"
+                className="text-md cursor-pointer self-center self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:self-end md:px-5 md:py-2"
+              >
                 Buyurtma berish
-              </button>
+              </Link>
             </div>
           </div>
         </div>
