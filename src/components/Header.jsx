@@ -4,6 +4,7 @@ import PartnersSlider from "./PartnersSlider";
 import { TravelSelect } from "./TravelSelect";
 import DataPicker from "./DataPicker";
 import Title from "./Title";
+import LanguageSelector from "./LanguageSelector";
 
 function Header() {
   return (
@@ -40,12 +41,7 @@ function Header() {
             </li>
           </ul>
 
-          <Link
-            href="/"
-            className="text-md hidden rounded border border-white px-5 py-2 text-white transition hover:bg-white hover:text-zinc-900 md:inline-block"
-          >
-            Ro'yxatdan o'tish
-          </Link>
+          <LanguageSelector />
         </div>
       </div>
 
