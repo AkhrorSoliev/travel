@@ -5,7 +5,7 @@ import ContactForm from "./layout/ContactForm";
 
 function Footer() {
   return (
-    <footer className="bg-zinc-900">
+    <footer id="footer" className="bg-zinc-900">
       <div className="align-elements">
         <ContactForm />
         <div className="flex flex-col items-center gap-5 border-b border-white py-7 md:flex-row md:justify-between">

@@ -9,6 +9,10 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -50,7 +54,7 @@ body {
   }
 
   section {
-    @apply py-10 md:py-40;
+    @apply py-10 md:py-20;
   }
 
   .counter-item {
