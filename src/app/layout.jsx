@@ -1,5 +1,6 @@
 import { Oswald, Poppins } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="grow">{children}</main>
         <Footer />
+        <Toaster position="bottom-center" reverseOrder={false} />
       </body>
     </html>
   );
