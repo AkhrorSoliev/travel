@@ -10,10 +10,12 @@ h6 {
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
+  height: 100%;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden !important;
 }
