@@ -9,16 +9,15 @@ import Navigation from "@/components/Navigation";
 import { Squash as Hamburger } from "hamburger-react";
 import HiddenNavigation from "@/components/HiddenNavigation";
 import { useEffect, useState } from "react";
-import { doc } from "prettier";
 
 function Header() {
   const [show, showNavbar] = useState(false);
 
   useEffect(() => {
     if (show) {
-      document.body.classList.add("show");
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.classList.remove("show");
+      document.body.style.overflowY = "scroll";
     }
   }, [show]);
 
