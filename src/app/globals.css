@@ -18,10 +18,6 @@ body {
   overflow-x: hidden !important;
 }
 
-body.show {
-  overflow: hidden !important;
-}
-
 @layer components {
   .align-elements {
     @apply mx-auto w-full max-w-[1300px] px-4;

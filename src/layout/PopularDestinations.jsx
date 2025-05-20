@@ -1,63 +1,83 @@
 "use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Link from "next/link";
+import { useEffect } from "react";
 
-function PopularDestinations() {
+function SpecialSuggest() {
+  useEffect(() => {
+    AOS.init({
+      offset: 50,
+    });
+  }, []);
   return (
-    <section id="popular-destinations" className="popular-destinations">
-      <div className="align-elements mb-10 flex flex-col gap-5">
-        <h1 className="text-4xl">ENG MASHHUR MANZILLAR</h1>
-        <p className="text-sm opacity-80 md:text-xl">
-          Mijozlarimizning fikrlariga tayangan holda eng mashhur sayohat
-          yo‘nalishlarimiz bilan tanishing.
-        </p>
-        <div className="flex flex-col justify-center gap-5 md:flex-row">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="group relative w-[100%] rounded-xl md:w-[25%]"
-          >
+    <section id="popular-destinations" className="special-packages">
+      <div className="align-elements">
+        <div className="mb-10">
+          <h2 className="mb-5 text-2xl uppercase md:text-4xl">
+            ENG MASHHUR MANZILLAR:
+          </h2>
+          <p className="text-sm opacity-80 md:text-xl">
+            Mijozlarimizning fikrlariga tayangan holda eng mashhur sayohat
+            yo‘nalishlarimiz bilan tanishing.
+          </p>
+        </div>
+      </div>
+      <div className="align-elements flex flex-col gap-5 md:h-auto md:flex-row">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+          className="group relative overflow-hidden rounded-xl"
+        >
+          <h2 className="absolute top-[10px] right-[10px] z-10 text-5xl text-white/50">
+            01
+          </h2>
+          <img
+            src="./images/special-1.jpg"
+            alt=""
+            className="h-[400px] w-full rounded-xl object-bottom grayscale transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:grayscale-0 md:h-full md:w-[300px]"
+          />
+          <p className="absolute bottom-[10px] left-[10px] z-10 translate-y-[115%] text-3xl text-white transition duration-300 group-hover:translate-y-[0%]">
+            Yer yuzining sayqali va Islom
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-center"
+          className="flex flex-col gap-5"
+        >
+          <div className="relative mb-auto">
+            <h2 className="absolute top-[10px] right-[10px] z-10 text-5xl text-white/50">
+              02
+            </h2>
             <img
-              src="./images/popular-1.jpg"
-              className="popular-img rounded-xl transition duration-300 md:mb-3 md:group-hover:scale-110"
+              src="./images/special-2.jpg"
               alt=""
+              className="h-[300] w-full rounded-xl"
             />
-            <h3 className="text-3xl">Marg'ilon — Rishton — Qo'qon</h3>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            className="group popular-img-main relative w-[100%] overflow-hidden rounded-xl text-white md:w-[50%]"
-          >
-            <img
-              src="./images/popular-2.jpg"
-              className="popular-img relative -z-10 h-[400px] rounded-xl transition duration-300 md:group-hover:scale-110"
-              alt=""
-            />
-            <div className="absolute bottom-0 p-4">
-              <h3 className="text-5xl md:mb-3">Samarqand + Buxoro</h3>
-              <p className="mb-5">
-                Yer yuzining sayqali va Islom dinining quvvati deya ta'rif
-                berilgan betakror maskanlarni ziyorat qilishingiz uchun ajoyib
-                imkoniyat! Oilangiz va yaqinlaringiz uchun sayohat sovg'a
-                qiling!
-              </p>
-              <div className="flex justify-end">
-                <button className="text-md cursor-pointer self-end rounded border border-white px-3 py-1 text-white transition hover:bg-white hover:text-black md:px-5 md:py-2">
-                  Batafsil
-                </button>
-              </div>
+          <div className="flex w-full flex-col items-center gap-3 md:my-0 md:flex-row md:gap-5">
+            <div>
+              <h2 data-aos="zoom-in" className="text-4xl md:text-6xl">
+                Ruhingizga sayqal, dilingizga saodat!
+              </h2>
             </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="700"
-            className="group w-[100%] rounded-xl md:w-[25%]"
-          >
-            <img
-              src="./images/popular-3.jpg"
-              className="popular-img rounded-xl transition duration-300 md:mb-3 md:group-hover:scale-110"
-              alt=""
-            />
-            <h3 className="text-3xl">Qo'qon-Rishton</h3>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="flex max-w-[400px] flex-col items-start justify-between gap-2 md:gap-0"
+            >
+              <p className="mb-5 text-right">
+                Oila va yaqinlaringizga unutilmas sovg‘a – ma’naviy ziyorat!
+                Islom merosi bo‘lgan Samarqand va Buxoro sizni chorlamoqda!
+              </p>
+              <Link
+                href="#footer"
+                className="text-md cursor-pointer self-center self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:self-end md:px-5 md:py-2"
+              >
+                Buyurtma berish
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -65,4 +85,4 @@ function PopularDestinations() {
   );
 }
 
-export default PopularDestinations;
+export default SpecialSuggest;
