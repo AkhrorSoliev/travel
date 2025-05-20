@@ -73,7 +73,7 @@ function SpecialSuggest() {
               </p>
               <Link
                 href="#footer"
-                className="text-md cursor-pointer self-center self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:self-end md:px-5 md:py-2"
+                className="text-md cursor-pointer self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:self-end md:px-5 md:py-2"
               >
                 Buyurtma berish
               </Link>

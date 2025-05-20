@@ -76,14 +76,6 @@ body {
   .popular-img {
     @apply h-[300px] w-full;
   }
-
-  .popular-img-main {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 30%,
-      rgba(0, 0, 0, 0.9) 100%
-    );
-  }
 }
 
 .link:hover {
@@ -100,6 +92,33 @@ body {
 
 .hidden-nav .language-selector {
   display: block !important;
+}
+.popular-img-main {
+  position: relative;
+  overflow: hidden;
+}
+
+.popular-img-main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.popular-img {
+  position: relative;
+  z-index: 0;
+}
+
+.popular-img-main .absolute {
+  position: absolute;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1068px) {
