@@ -112,7 +112,10 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div style={{ width: 160 }}>
+    <div
+      style={{ width: 160 }}
+      className="language-selector hidden md:inline-block"
+    >
       <Select
         value={selectedLang}
         onChange={handleChange}

@@ -2,8 +2,8 @@ import { Oswald, Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../ui/Header";
+import Footer from "../ui/Footer";
 
 // Oswald font is used for the headings
 const OswaldFont = Oswald({

@@ -1,8 +1,8 @@
-import Counter from "@/components/layout/Counter";
-import SpecialSuggest from "@/components/layout/SpecialSuggest";
-import PopularDestinations from "@/components/layout/PopularDestinations";
-import Cta from "@/components/layout/Cta";
-import Features from "@/components/layout/Features";
+import Counter from "@/layout/Counter";
+import SpecialSuggest from "@/layout/SpecialSuggest";
+import PopularDestinations from "@/layout/PopularDestinations";
+import Cta from "@/layout/Cta";
+import Features from "@/layout/Features";
 
 function Home() {
   return (
