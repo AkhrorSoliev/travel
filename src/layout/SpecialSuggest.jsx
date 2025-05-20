@@ -1,8 +1,8 @@
 "use client";
 
-function PopularDestinations() {
+function SpecialSuggest() {
   return (
-    <section id="special-suggest" className="popular-destinations">
+    <section id="popular-destinations" className="popular-destinations">
       <div className="align-elements mb-10 flex flex-col gap-5">
         <h1 className="text-4xl"> MAXSUS PAKETLAR:</h1>
         <p className="text-sm opacity-80 md:text-xl">
@@ -65,4 +65,4 @@ function PopularDestinations() {
   );
 }
 
-export default PopularDestinations;
+export default SpecialSuggest;
