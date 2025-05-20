@@ -1,45 +1,45 @@
-import Link from "next/link";
-import { FaBusAlt } from "react-icons/fa";
-import PartnersSlider from "./PartnersSlider";
-import { TravelSelect } from "./TravelSelect";
-import DataPicker from "./DataPicker";
-import Title from "./Title";
-import LanguageSelector from "./LanguageSelector";
-import Logo from "./layout/Logo";
+"use client";
+import PartnersSlider from "../components/PartnersSlider";
+import { TravelSelect } from "../components/TravelSelect";
+import DataPicker from "../components/DataPicker";
+import Title from "../components/Title";
+import LanguageSelector from "../components/LanguageSelector";
+import Logo from "../layout/Logo";
+import Navigation from "@/components/Navigation";
+import { Squash as Hamburger } from "hamburger-react";
+import HiddenNavigation from "@/components/HiddenNavigation";
+import { useEffect, useState } from "react";
+import { doc } from "prettier";
 
 function Header() {
+  const [show, showNavbar] = useState(false);
+
+  useEffect(() => {
+    if (show) {
+      document.body.classList.add("show");
+    } else {
+      document.body.classList.remove("show");
+    }
+  }, [show]);
+
   return (
     <header className="header mb-20 pb-24">
       <div className="align-elements">
-        <div className="mb-10 flex flex-col items-center gap-6 py-8 md:flex-row md:justify-between">
+        <div className="mb-10 flex items-center gap-6 py-8 md:flex-row">
           <Logo />
-
-          <ul className="hidden justify-center gap-6 md:flex">
-            <li>
-              <Link href="/about" className="text-white hover:opacity-80">
-                Yo'nalishlar
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-white hover:opacity-80">
-                Turlar
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="text-white hover:opacity-80">
-                Biz haqimizda
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="text-white hover:opacity-80">
-                Blog
-              </Link>
-            </li>
+          <ul className="header-nav hidden justify-center gap-6 text-white md:flex">
+            <Navigation />
           </ul>
-
           <LanguageSelector />
+          <button
+            onClick={() => showNavbar(!show)}
+            className="nav-toggler hidden"
+          >
+            <Hamburger color="white" toggled={show} />
+          </button>
         </div>
       </div>
+      <HiddenNavigation show={show} showNavbar={showNavbar} />
 
       <div className="align-elements text-center text-white">
         <p className="text-lg md:text-3xl">

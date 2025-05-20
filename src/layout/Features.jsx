@@ -43,7 +43,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="">
+    <section id="features">
       <div className="align-elements grid grid-cols-1 gap-8 place-self-center bg-white text-center md:grid-cols-2">
         {features.map((item, index) => (
           <div

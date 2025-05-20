@@ -6,7 +6,7 @@ function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-3 self-center text-xl text-white hover:opacity-80 md:text-2xl"
+      className="mr-auto flex items-center gap-3 self-center text-xl text-white hover:opacity-80 md:text-2xl"
     >
       <FaBusAlt className="text-2xl md:text-5xl" />
       <span className="flex flex-col">

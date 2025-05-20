@@ -2,7 +2,7 @@ import React from "react";
 
 function Cta() {
   return (
-    <section className="cta py-20 text-center text-white md:py-40">
+    <section id="cta" className="cta py-20 text-center text-white md:py-40">
       <div className="align-elements">
         <h2 className="mb-5 text-3xl uppercase md:text-6xl">
           Sarguzashtingizni boshlang!

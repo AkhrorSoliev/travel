@@ -7,11 +7,11 @@ import { useEffect } from "react";
 function SpecialSuggest() {
   useEffect(() => {
     AOS.init({
-      offset: 400,
+      offset: 50,
     });
   }, []);
   return (
-    <section className="special-packages">
+    <section id="special-suggest" className="special-packages">
       <div className="align-elements">
         <div className="mb-10">
           <h2 className="mb-5 text-2xl uppercase md:text-4xl">
