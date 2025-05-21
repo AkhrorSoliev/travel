@@ -13,7 +13,7 @@ function PopularDestinations() {
   return (
     <section id="special-suggest" className="popular-destinations px-4 py-12">
       <div className="align-elements mb-10 flex flex-col gap-5 text-left">
-        <h1 className="text-4xl font-bold uppercase">MAXSUS PAKETLAR:</h1>
+        <h1 className="text-4xl uppercase">MAXSUS MANZILLAR:</h1>
         <p className="text-sm opacity-80 md:text-xl">
           Sizning ehtiyojlaringizga moslashtirilgan maxsus sayohat
           paketlarimizdan bahramand bo'ling.
