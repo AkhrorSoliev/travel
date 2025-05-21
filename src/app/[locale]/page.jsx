@@ -1,15 +1,15 @@
 import Counter from "@/layout/Counter";
-import SpecialSuggest from "@/layout/PopularDestinations";
-import PopularDestinations from "@/layout/SpecialSuggest";
+import PopularDestinations from "@/layout/PopularDestinations";
+import SpecialSuggest from "@/layout/SpecialSuggest";
 import Cta from "@/layout/Cta";
 import Features from "@/layout/Features";
 
 function Home() {
   return (
     <>
-      <PopularDestinations />
-      <Features />
       <SpecialSuggest />
+      <Features />
+      <PopularDestinations />
       <Counter />
       <Cta />
     </>

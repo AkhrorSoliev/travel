@@ -1,0 +1,62 @@
+{
+  "Header": {
+    "locations": "Mashxur Manzillar",
+    "opportunities": "Imkoniyatlar",
+    "packages": "Maxsus Paketlar",
+    "statistics": "Biz raqamlarda",
+    "title": "UNUTILMAS SAYOHATLAR SIZNI KUTMOQDA",
+    "subtitle": "Sayohat qilamiz",
+    "description": "Dunyoning eng qiziqarli manzillarini tajribali jamoamiz tomonidan tayyorlangan sayohat paketlari bilan kashf eting.",
+    "tours": "Turlar",
+    "selectDate": "Sanani tanlang",
+    "order": "Buyurtma berish"
+  },
+  "SpecialSuggest": {
+    "title": "MAXSUS PAKETLAR",
+    "description": "Sizning ehtiyojlaringizga moslashtirilgan maxsus sayohat paketlarimizdan bahramand bo'ling.",
+    "package1": {
+      "title": "Marg'ilon — Rishton — Qo'qon"
+    },
+    "package2": {
+      "title": "Samarqand + Buxoro",
+      "description": "Yer yuzining sayqali va Islom dinining quvvati deya ta'rif berilgan betakror maskanlarni ziyorat qilishingiz uchun ajoyib imkoniyat! Oilangiz va yaqinlaringiz uchun sayohat sovg'a qiling!"
+    },
+    "package3": {
+      "title": "Qo'qon-Rishton"
+    },
+    "moreBtn": "Batafsil"
+  },
+  "PopularDestinations": {
+    "title": "MAXSUS MANZILLAR",
+    "description": "Sizning ehtiyojlaringizga moslashtirilgan maxsus sayohat paketlarimizdan bahramand bo'ling."
+  },
+  "Counter": {
+    "heading": "UNUTILMAS XOTIRALAR SIFAT BILAN BOSHLANADI",
+    "description1": "Unutilmas xotiralar uchun — faqat yuqori sifat. Bizga ishonchingiz ortishi uchun raqamlarimizga qarang — sarguzashtni birga boshlaymiz!",
+    "description2": "Siz — eng yaxshisiga loyiqsiz! Raqamlarimizga qarang va yo‘lga chiqing!",
+    "stats": {
+      "cityDistrict": "Manzillar",
+      "tours": "Sayohat",
+      "guides": "Yo'l ko'rsatuvchi",
+      "experience": "Tajriba"
+    }
+  },
+  "Cta": {
+    "title": "Sarguzashtingizni boshlang!",
+    "description": "Yangiliklarimizga obuna bo‘ling va eksklyuziv sayohat chegirmalari, foydali maslahatlar hamda ilhomlantiruvchi yo‘nalishlar haqida birinchilardan bo‘lib xabardor bo‘ling. Sarguzashtni qo‘ldan boy bermang — bugunoq ro‘yxatimizga qo‘shiling!"
+  },
+  "Footer": {
+    "phone": "Telefon",
+    "address": "Manzil",
+    "addressVal": "Farg'ona sh. Mustaqillik k-si 336-uy",
+    "mail": "E-pochta",
+    "allRightsReserved": "Barcha huquqlar himoyalangan",
+    "ContactForm": {
+      "title": "Buyurtma bering",
+      "name": "Ismingizni kiriting",
+      "mail": "E-pochta manzilingiz",
+      "message": "Xabaringizni qoldiring",
+      "send": "Jo'natish"
+    }
+  }
+}

@@ -1,7 +1,9 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { FaUser, FaPhone, FaRegCommentDots } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 import { v4 as uuidv4 } from "uuid";
 
 const InputField = ({
@@ -64,7 +66,7 @@ function ContactForm() {
     phone: "",
     message: "",
   });
-
+  const t = useTranslations("Footer.ContactForm");
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -109,8 +111,8 @@ function ContactForm() {
       className="mx-auto mb-10 max-w-md space-y-5 p-4"
       onSubmit={handleSubmit}
     >
-      <h2 className="my-5 text-center text-2xl text-white md:my-10 md:text-4xl">
-        Buyurtma bering
+      <h2 className="my-5 text-center text-2xl text-white md:text-4xl">
+        {t("title")}
       </h2>
 
       <InputField
@@ -118,8 +120,16 @@ function ContactForm() {
         name="name"
         value={form.name}
         onChange={handleChange}
-        placeholder="Ismingizni kiriting"
+        placeholder={t("name")}
         error={errors.name}
+      />
+      <InputField
+        icon={HiOutlineMail}
+        name="mail"
+        value={form.mail}
+        onChange={handleChange}
+        placeholder={t("mail")}
+        error={errors.mail}
       />
 
       <InputField icon={FaPhone} error={errors.phone}>
@@ -150,7 +160,7 @@ function ContactForm() {
         name="message"
         value={form.message}
         onChange={handleChange}
-        placeholder="Xabaringizni yozing..."
+        placeholder={t("message") + "..."}
         error={errors.message}
       />
 
@@ -159,7 +169,7 @@ function ContactForm() {
         className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
       >
         <FaRegCommentDots />
-        Jo'natish
+        {t("send")}
       </button>
     </form>
   );

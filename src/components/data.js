@@ -18,3 +18,10 @@ export const tourPackages = [
   { id: 13, value: "nature-and-wildlife", label: "Tabiat va Yovvoyi Hayot" },
   { id: 14, value: "family-holiday", label: "Oila Uchun Dam Olish" },
 ];
+
+export const navItems = [
+  { href: "#popular-destinations", label: "locations" },
+  { href: "#features", label: "opportunities" },
+  { href: "#special-suggest", label: "packages" },
+  { href: "#counter", label: "statistics" },
+];

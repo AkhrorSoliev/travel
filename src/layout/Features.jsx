@@ -1,46 +1,18 @@
 "use client";
 
 import React, { useEffect } from "react";
-import {
-  FaSmileBeam,
-  FaMountain,
-  FaMapMarkedAlt,
-  FaClock,
-} from "react-icons/fa";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { features } from "./data";
+import { useLocale } from "next-intl";
 
 const Features = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  const features = [
-    {
-      icon: <FaSmileBeam size={60} className="text-blue-500" />,
-      title: "Mijozlar mamnunligi",
-      description:
-        "Biz mijozlarimizga eng yaxshi xizmat va unutilmas tajriba taqdim etamiz.",
-    },
-    {
-      icon: <FaMountain size={60} className="text-blue-500" />,
-      title: "Haqiqiy sarguzasht",
-      description:
-        "Sizga chinakam sarguzashtga boy sayohat tajribasini taqdim qilamiz.",
-    },
-    {
-      icon: <FaMapMarkedAlt size={60} className="text-blue-500" />,
-      title: "Tajribali yo‘l ko‘rsatuvchilar",
-      description:
-        "Faqat eng malakali va tajribali gidlar xizmatini taqdim qilamiz.",
-    },
-    {
-      icon: <FaClock size={60} className="text-blue-500" />,
-      title: "Vaqt bo‘yicha moslashuvchanlik",
-      description:
-        "Sizning sayohat vaqtingizga moslashamiz va qulaylik yaratamiz.",
-    },
-  ];
+  const locale = useLocale();
 
   return (
     <section id="features">
@@ -53,8 +25,12 @@ const Features = () => {
             data-aos-delay={index * 100}
           >
             {item.icon}
-            <h3 className="mt-3 text-xl font-semibold">{item.title}</h3>
-            <p className="mt-2 text-gray-600">{item.description}</p>
+            <h3 className="mt-3 text-3xl font-semibold">
+              {item.title[locale]}
+            </h3>
+            <p className="mt-2 text-xl text-gray-600">
+              {item.description[locale]}
+            </p>
           </div>
         ))}
       </div>

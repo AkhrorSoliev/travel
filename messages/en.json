@@ -1,0 +1,63 @@
+{
+  "Header": {
+    "locations": "Famous Apartments",
+    "opportunities": "Opportunities",
+    "packages": "Special Packages",
+    "statistics": "Statistics",
+    "title": "UNFORGETTABLE JOURNEYS AWAIT YOU",
+    "subtitle": "Let's travel",
+    "description": "Explore the world's most exciting destinations with travel packages crafted by our experienced team.",
+    "tours": "Tours",
+    "selectDate": "Select a date",
+    "order": "Order"
+  },
+
+  "SpecialSuggest": {
+    "title": "SPECIAL PACKAGES",
+    "description": "Enjoy our special travel packages tailored to your needs.",
+    "package1": {
+      "title": "Margilan — Rishtan — Kokand"
+    },
+    "package2": {
+      "title": "Samarkand + Bukhara",
+      "description": "A wonderful opportunity to visit unique destinations praised as the ornament of the Earth and the strength of Islam! Gift a journey to your family and loved ones!"
+    },
+    "package3": {
+      "title": "Kokand — Rishtan"
+    },
+    "moreBtn": "Learn more"
+  },
+  "PopularDestinations": {
+    "title": "SPECIAL DESTINATIONS",
+    "description": "Enjoy our special travel packages tailored to your needs."
+  },
+  "Counter": {
+    "heading": "UNFORGETTABLE MEMORIES BEGIN WITH QUALITY",
+    "description1": "Unforgettable memories require top quality. Check our numbers and trust us — let's start the adventure together!",
+    "description2": "You deserve the best! Check our numbers and start your journey!",
+    "stats": {
+      "cityDistrict": "Locations",
+      "tours": "Tours",
+      "guides": "Guides",
+      "experience": "Experiences"
+    }
+  },
+  "Cta": {
+    "title": "Start your adventure!",
+    "description": "Subscribe to our newsletter and be the first to know about exclusive travel discounts, helpful tips, and inspiring destinations. Don’t miss the adventure — join our list today!"
+  },
+  "Footer": {
+    "phone": "Phone",
+    "address": "Address",
+    "addressVal": "336 Mustaqillik Ave., Fergana City",
+    "mail": "Email",
+    "allRightsReserved": "All rights reserved",
+    "ContactForm": {
+      "title": "Place an Order",
+      "name": "Enter your name",
+      "mail": "Your email address",
+      "message": "Leave your message",
+      "send": "Send"
+    }
+  }
+}

@@ -1,20 +1,17 @@
 import React from "react";
 import Link from "next/link";
-
-const navItems = [
-  { href: "#popular-destinations", label: "Mashxur Manzillar" },
-  { href: "#features", label: "Imkoniyatlar" },
-  { href: "#special-suggest", label: "Maxsus Paketlar" },
-  { href: "#counter", label: "Biz raqamlarda" },
-];
+import { useTranslations } from "next-intl";
+import { navItems } from "./data";
 
 function Navigation() {
+  const t = useTranslations("Header");
+
   return (
     <>
       {navItems.map((item) => (
         <li key={item.href}>
           <Link href={item.href} className="hover:opacity-80">
-            {item.label}
+            {t(item.label)}
           </Link>
         </li>
       ))}

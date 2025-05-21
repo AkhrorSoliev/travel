@@ -7,6 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function DataPicker({
   selected,
   onChange,
+  label = "Sanani tanlang",
   placeholder = "Sanani tanlang",
 }) {
   const [startDate, setStartDate] = useState(selected || null);
@@ -18,7 +19,7 @@ export default function DataPicker({
 
   return (
     <div className="data-picker grow">
-      <span className="mb-2 block">Sanani tanlang:</span>
+      <span className="mb-2 block">{label}:</span>
       <DatePicker
         selected={startDate}
         onChange={handleChange}

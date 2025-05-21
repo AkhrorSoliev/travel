@@ -2,6 +2,9 @@
 
 import React, { useState } from "react";
 import Select from "react-select";
+import { useRouter } from "@/i18n/navigation";
+import { usePathname } from "next/navigation";
+
 import "country-flag-icons/react/3x2"; // flaglar uchun CSS
 
 // Til variantlari
@@ -105,10 +108,19 @@ const customStyles = {
 };
 
 const LanguageSelector = () => {
-  const [selectedLang, setSelectedLang] = useState(languages[0]);
+  const router = useRouter();
+  const pathname = usePathname();
+  const currentLocale = pathname.split("/")[1];
+
+  const [selectedLang, setSelectedLang] = useState(
+    languages.filter((l) => l.value === currentLocale)[0],
+  );
 
   const handleChange = (selectedOption) => {
     setSelectedLang(selectedOption);
+    router.replace(pathname.replace(`${currentLocale}`, ""), {
+      locale: selectedOption.value,
+    });
   };
 
   return (

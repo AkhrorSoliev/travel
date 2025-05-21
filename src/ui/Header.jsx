@@ -9,8 +9,10 @@ import Navigation from "@/components/Navigation";
 import { Squash as Hamburger } from "hamburger-react";
 import HiddenNavigation from "@/components/HiddenNavigation";
 import { useEffect, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 function Header() {
+  const t = useTranslations("Header");
   const [show, showNavbar] = useState(false);
 
   useEffect(() => {
@@ -41,25 +43,22 @@ function Header() {
       <HiddenNavigation show={show} showNavbar={showNavbar} />
 
       <div className="align-elements text-center text-white">
-        <p className="text-lg md:text-3xl">
-          UNUTILMAS SAYOHATLAR SIZNI KUTMOQDA
-        </p>
+        <p className="text-lg md:text-3xl">{t("title")}</p>
         <h1 className="mb-6 text-4xl leading-tight font-bold md:text-7xl">
-          <span className="uppercase">Sayohat qilamiz</span>
+          <span className="uppercase"> {t("subtitle")}</span>
           <br />
           <Title />
         </h1>
         <p className="mx-auto mb-8 max-w-3xl text-base md:text-xl">
-          Dunyoning eng qiziqarli manzillarini tajribali jamoamiz tomonidan
-          tayyorlangan sayohat paketlari bilan kashf eting.
+          {t("description")}
         </p>
       </div>
       <div className="align-elements relative z-50 mb-10 md:mb-20">
         <div className="mx-auto flex max-w-3xl flex-col gap-4 rounded-2xl bg-white p-3 md:flex-row md:p-5">
-          <TravelSelect label="Qayerdan:" />
-          <DataPicker />
+          <TravelSelect label={t("tours")} />
+          <DataPicker label={t("selectDate")} placeholder={t("selectDate")} />
           <button className="text-md cursor-pointer self-end rounded border border-black px-3 py-1 text-black transition hover:bg-black hover:text-white md:px-5 md:py-2">
-            Qidirish
+            {t("order")}
           </button>
         </div>
         -

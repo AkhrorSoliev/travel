@@ -1,10 +1,12 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
 
 function Counter() {
   const counterRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const t = useTranslations("Counter");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,37 +43,35 @@ function Counter() {
             data-aos-offset="150"
             className="mb-5 text-center text-4xl md:text-left md:text-6xl"
           >
-            UNUTILMAS XOTIRALAR SIFAT BILAN BOSHLANADI
+            {t("heading")}
           </h2>
           <p
             data-aos="fade-up"
             data-aos-offset="150"
             className="mb-20 text-center text-xl md:text-left"
           >
-            Unutilmas xotiralar uchun — faqat yuqori sifat. Bizga ishonchingiz
-            ortishi uchun raqamlarimizga qarang — sarguzashtni birga boshlaymiz!
+            {t("description1")}
           </p>
           <p className="mb-auto text-center text-xl md:ml-auto md:w-[360px] md:text-right md:text-2xl">
-            Siz — eng yaxshisiga loyiqsiz! Raqamlarimizga qarang va yo‘lga
-            chiqing!
+            {t("description2")}
           </p>
 
           <ul className="counter-list mt-10 hidden justify-between gap-10 text-3xl md:flex">
             <li className="counter-item">
               {isVisible ? <CountUp start={0} end={100} duration={2} /> : 0} +
-              <p>shaxar/tuman</p>
+              <p> {t("stats.cityDistrict")}</p>
             </li>
             <li data-aos-offset="300" className="counter-item">
               {isVisible ? <CountUp end={1000} duration={2} /> : 0} +
-              <p>Sayohat</p>
+              <p>{t("stats.tours")}</p>
             </li>
             <li data-aos-offset="300" className="counter-item">
               {isVisible ? <CountUp end={121} duration={2} /> : 0} +
-              <p>Yo'l ko'rsatuvchi</p>
+              <p>{t("stats.guides")}</p>
             </li>
             <li data-aos-offset="300" className="counter-item">
               {isVisible ? <CountUp end={1541} duration={2} /> : 0} +
-              <p>tajriba</p>
+              <p>{t("stats.experience")}</p>
             </li>
           </ul>
         </div>
@@ -82,19 +82,19 @@ function Counter() {
         <ul className="grid grid-cols-2 gap-10 text-xl md:hidden md:text-3xl">
           <li className="counter-item">
             {isVisible ? <CountUp start={0} end={100} duration={2} /> : 0}
-            <p>City</p>
+            <p>{t("stats.cityDistrict")}</p>
           </li>
           <li className="counter-item">
             {isVisible ? <CountUp end={1000} duration={2} /> : 0}
-            <p>Tour</p>
+            <p>{t("stats.tours")}</p>
           </li>
           <li className="counter-item">
             {isVisible ? <CountUp end={421} duration={2} /> : 0}
-            <p>Guide</p>
+            <p>{t("stats.guides")}</p>
           </li>
           <li className="counter-item">
             {isVisible ? <CountUp end={1541} duration={2} /> : 0}
-            <p>Experience</p>
+            <p>{t("stats.experience")}</p>
           </li>
         </ul>
       </section>
