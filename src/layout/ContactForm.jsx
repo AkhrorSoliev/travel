@@ -64,9 +64,11 @@ function ContactForm() {
   const [form, setForm] = useState({
     name: "",
     phone: "",
+    mail: "",
     message: "",
   });
   const t = useTranslations("Footer.ContactForm");
+  const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -76,6 +78,7 @@ function ContactForm() {
   const validate = () => {
     const newErrors = {};
     if (!form.name.trim()) newErrors.name = "Ismingizni kiriting";
+    if (!form.mail.trim()) newErrors.nail = "E-pichta manzilingizni kiriting";
     if (!form.phone.trim()) newErrors.phone = "Telefon raqamni kiriting";
     else if (!/^\d{9}$/.test(form.phone))
       newErrors.phone = "9 xonali raqam kiriting";
@@ -83,7 +86,7 @@ function ContactForm() {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -92,17 +95,48 @@ function ContactForm() {
     }
 
     const fullPhone = "+998" + form.phone;
-    const data = {
-      id: uuidv4(),
-      name: form.name,
-      phone: fullPhone,
-      message: form.message,
-    };
 
-    console.log(data);
-    // Tozalash
-    setForm({ name: "", phone: "", message: "" });
-    toast.success("Xabaringiz muvaffaqiyatli yuborildi!");
+    toast.promise(
+      async () => {
+        try {
+          // Имитация запроса к API
+          const text = `
+                Xabar \nIsm: ${form.name} \nTelefon: ${fullPhone}\nE-pochta: ${form.mail}\nXabar: ${form.message}
+              `;
+
+          const botToken = "7997128244:AAHXk98iBsvMoLB-EiOzEM90eThDRRwQMA4";
+          const chatId = "-1002519373404";
+
+          const req = await fetch(
+            `https://api.telegram.org/bot${botToken}/sendMessage`,
+            {
+              method: "POST",
+              body: JSON.stringify({
+                chat_id: chatId,
+                text,
+              }),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            },
+          );
+
+          if (!req.ok) {
+            throw new Error("Xatolik yuz berdi");
+          }
+
+          setForm({ name: "", phone: "", message: "", mail: "" });
+        } catch (error) {
+          console.error("Submission error:", error);
+        }
+      },
+      {
+        loading: "Xabaringiz yuborilmoqda",
+        success: "Xabaringiz muvaffaqiyatli yuborildi",
+        error: "Xabaringiz yuborishda xatolik yuz berdi!",
+      },
+    );
+
     setErrors({});
   };
 
@@ -126,6 +160,7 @@ function ContactForm() {
       <InputField
         icon={HiOutlineMail}
         name="mail"
+        type="email"
         value={form.mail}
         onChange={handleChange}
         placeholder={t("mail")}
