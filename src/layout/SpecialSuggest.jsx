@@ -1,8 +1,20 @@
 "use client";
 
+import TourBookingModal from "@/components/Modal";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 function SpecialSuggest() {
+  const [modal, setModal] = useState({
+    isOpen: false,
+    tour: "",
+    date: "",
+  });
+
+  const handleOpenModal = (tour, date = "") => {
+    setModal({ isOpen: true, tour, date });
+  };
+
   const t = useTranslations("SpecialSuggest");
   return (
     <section id="popular-destinations" className="popular-destinations">
@@ -23,7 +35,10 @@ function SpecialSuggest() {
             <h3 className="text-3xl">{t("package1.title")}</h3>
             <div className="absolute top-0 p-4">
               <div className="flex justify-end">
-                <button className="cursor-pointer self-end rounded border border-white px-3 py-1 text-sm text-white backdrop-blur-sm transition hover:bg-white hover:text-black md:px-5 md:py-2">
+                <button
+                  className="cursor-pointer self-end rounded border border-white px-3 py-1 text-sm text-white backdrop-blur-sm transition hover:bg-white hover:text-black md:px-5 md:py-2"
+                  onClick={() => handleOpenModal(t("package1.title"))}
+                >
                   {t("order")}
                 </button>
               </div>
@@ -70,6 +85,13 @@ function SpecialSuggest() {
           </div>
         </div>
       </div>
+      {modal.isOpen && (
+        <TourBookingModal
+          tour={modal.tour}
+          date={modal.date}
+          onClose={() => setModal({ isOpen: false, tour: "", date: "" })}
+        />
+      )}
     </section>
   );
 }

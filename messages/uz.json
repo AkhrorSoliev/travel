@@ -45,6 +45,17 @@
     "title": "Sarguzashtingizni boshlang!",
     "description": "Yangiliklarimizga obuna bo‘ling va eksklyuziv sayohat chegirmalari, foydali maslahatlar hamda ilhomlantiruvchi yo‘nalishlar haqida birinchilardan bo‘lib xabardor bo‘ling. Sarguzashtni qo‘ldan boy bermang — bugunoq ro‘yxatimizga qo‘shiling!"
   },
+  "TourBooking": {
+    "title": "Tur band qilish",
+    "name": "Ismingiz",
+    "message": "Xabaringizni qoldiring",
+    "tourName": "Tur nomi",
+    "tourDate": "Tur sanasi",
+    "bookTour": "Band qilish",
+    "tourNameError": "Tur nomini kiriting",
+    "tourDateError": "Tur sanasini tanlang",
+    "datePastError": "Sana o'tgan kun bo'lishi mumkin emas"
+  },
   "Footer": {
     "phone": "Telefon",
     "address": "Manzil",

@@ -1,64 +1,11 @@
 "use client";
+import { InputField } from "@/components/InputFiels";
+import { TextAreaField } from "@/components/TextAreaField";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { FaUser, FaPhone, FaRegCommentDots } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { v4 as uuidv4 } from "uuid";
-
-const InputField = ({
-  icon: Icon,
-  type = "text",
-  placeholder,
-  name,
-  value,
-  onChange,
-  error,
-  children,
-}) => (
-  <div>
-    <div className="flex items-center gap-3 rounded-xl border border-gray-300 px-4 py-2 transition focus-within:ring-2 focus-within:ring-blue-500">
-      <Icon className="text-gray-500" />
-      {children ? (
-        children
-      ) : (
-        <input
-          type={type}
-          name={name}
-          value={value}
-          onChange={onChange}
-          placeholder={placeholder}
-          className="w-full bg-transparent text-white placeholder-gray-400 outline-none"
-        />
-      )}
-    </div>
-    {error && <p className="mt-1 text-sm text-red-400">{error}</p>}
-  </div>
-);
-
-const TextAreaField = ({
-  icon: Icon,
-  placeholder,
-  name,
-  value,
-  onChange,
-  error,
-}) => (
-  <div>
-    <div className="flex items-start gap-3 rounded-xl border border-gray-300 px-4 py-2 transition focus-within:ring-2 focus-within:ring-blue-500">
-      <Icon className="mt-1 text-gray-500" />
-      <textarea
-        rows={4}
-        name={name}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        className="w-full resize-none bg-transparent text-white placeholder-gray-400 outline-none"
-      />
-    </div>
-    {error && <p className="mt-1 text-sm text-red-400">{error}</p>}
-  </div>
-);
 
 function ContactForm() {
   const [form, setForm] = useState({
@@ -78,7 +25,7 @@ function ContactForm() {
   const validate = () => {
     const newErrors = {};
     if (!form.name.trim()) newErrors.name = "Ismingizni kiriting";
-    if (!form.mail.trim()) newErrors.nail = "E-pichta manzilingizni kiriting";
+    if (!form.mail.trim()) newErrors.mail = "E-pichta manzilingizni kiriting";
     if (!form.phone.trim()) newErrors.phone = "Telefon raqamni kiriting";
     else if (!/^\d{9}$/.test(form.phone))
       newErrors.phone = "9 xonali raqam kiriting";

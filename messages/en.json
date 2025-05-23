@@ -46,6 +46,18 @@
     "title": "Start your adventure!",
     "description": "Subscribe to our newsletter and be the first to know about exclusive travel discounts, helpful tips, and inspiring destinations. Don’t miss the adventure — join our list today!"
   },
+
+  "TourBooking": {
+    "title": "Tour Booking",
+    "tourName": "Tour Name",
+    "tourDate": "Tour Date",
+    "name": "Enter your name",
+    "message": "Leave your message",
+    "bookTour": "Book Tour",
+    "tourNameError": "Please enter tour name",
+    "tourDateError": "Please select tour date",
+    "datePastError": "Date cannot be in the past"
+  },
   "Footer": {
     "phone": "Phone",
     "address": "Address",

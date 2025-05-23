@@ -9,7 +9,8 @@ import Navigation from "@/components/Navigation";
 import { Squash as Hamburger } from "hamburger-react";
 import HiddenNavigation from "@/components/HiddenNavigation";
 import { useEffect, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import TourBookingModal from "@/components/Modal";
 
 function Header() {
   const t = useTranslations("Header");
