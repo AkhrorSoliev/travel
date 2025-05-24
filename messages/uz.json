@@ -13,16 +13,28 @@
   },
   "SpecialSuggest": {
     "title": "MAXSUS PAKETLAR",
-    "description": "Sizning ehtiyojlaringizga moslashtirilgan maxsus sayohat paketlarimizdan bahramand bo'ling.",
+    "description": "O'z ehtiyojlaringizga moslashtirilgan maxsus sayohat paketlarimizdan bahramand bo'ling.",
     "package1": {
       "title": "Marg'ilon — Rishton — Qo'qon"
     },
     "package2": {
       "title": "Samarqand + Buxoro",
-      "description": "Yer yuzining sayqali va Islom dinining quvvati deya ta'rif berilgan betakror maskanlarni ziyorat qilishingiz uchun ajoyib imkoniyat! Oilangiz va yaqinlaringiz uchun sayohat sovg'a qiling!"
+      "description": "Dunyoning zebo va Islom qudrati deb ulug'langan noyib manzillarga tashrif buyurishning ajoyib imkoniyati! O'z oilangiz va yaqinlaringizga sayohat sovg'a qiling!"
     },
     "package3": {
-      "title": "Qo'qon-Rishton"
+      "title": "Qo'qon — Rishton"
+    },
+    "package4": {
+      "title": "Sharm al-Shayx",
+      "description": "Qizil dengiz jannatida ajoyib marjon riflari va hashamatli kurortlarni bosing."
+    },
+    "package5": {
+      "title": "Dubay",
+      "description": "Hayratlanarli arxitektura va cheksiz savdo imkoniyatlari bilan futuristik shaharni kashf eting."
+    },
+    "package6": {
+      "title": "Maldiv orollari",
+      "description": "Sof firuza rangli suvlar bilan o'ralgan suv ustidagi bungalovlarda dam oling."
     },
     "order": "Buyurtma berish"
   },
