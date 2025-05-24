@@ -1,33 +1,40 @@
 "use client";
 
-import { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import { useState, useEffect } from "react";
 
 export default function DataPicker({
   selected,
-  onChange,
+  setTourDate,
   label = "Sanani tanlang",
   placeholder = "Sanani tanlang",
 }) {
-  const [startDate, setStartDate] = useState(selected || null);
+  const formatDate = (date) => {
+    return date?.toISOString().split("T")[0]; // yyyy-MM-dd format
+  };
 
-  const handleChange = (date) => {
-    setStartDate(date);
-    onChange && onChange(date);
+  const [startDate, setStartDate] = useState(formatDate(selected) || "");
+
+  useEffect(() => {
+    if (selected) {
+      setStartDate(formatDate(selected));
+    }
+  }, [selected]);
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setStartDate(value);
+    setTourDate(startDate);
   };
 
   return (
     <div className="data-picker grow">
       <span className="mb-2 block">{label}:</span>
-      <DatePicker
-        selected={startDate}
+      <input
+        type="date"
+        value={startDate}
         onChange={handleChange}
-        placeholderText={placeholder}
-        dateFormat="dd/MM/yyyy"
+        placeholder={placeholder}
         className="w-full rounded-lg border border-gray-300 px-3 py-[6px] focus:ring-2 focus:ring-blue-400 focus:outline-none"
-        popperPlacement="bottom-start"
-        calendarClassName="rounded-lg shadow-lg"
       />
     </div>
   );
