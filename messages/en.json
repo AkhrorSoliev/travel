@@ -25,6 +25,18 @@
     "package3": {
       "title": "Kokand — Rishtan"
     },
+    "package4": {
+      "title": "Sharm El Sheikh",
+      "description": "Experience the Red Sea's paradise with stunning coral reefs and luxurious resorts."
+    },
+    "package5": {
+      "title": "Dubai",
+      "description": "Discover the futuristic city with breathtaking architecture and endless shopping."
+    },
+    "package6": {
+      "title": "Maldives",
+      "description": "Relax in overwater bungalows surrounded by crystal-clear turquoise waters."
+    },
     "order": "Order"
   },
   "PopularDestinations": {

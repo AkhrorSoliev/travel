@@ -26,6 +26,7 @@ export default function TourBookingModal({ tour, date, onClose }) {
   const [open, setOpen] = useState(true);
   const t = useTranslations("TourBooking");
   const [errors, setErrors] = useState({});
+
   const handleClose = () => {
     setOpen(false);
     onClose();
@@ -76,13 +77,13 @@ export default function TourBookingModal({ tour, date, onClose }) {
           // Отправка данных с новыми полями
 
           const text = `
-Buyurtma\n
-Tur: ${form.tourName}\n
-Sana: ${new Date(form.tourDate).toLocaleDateString()}\n
-Ism: ${form.name}\n
-Telefon: +998${form.phone}\n
-Сообщение: ${form.message}
-  `;
+                Buyurtma\n
+                Tur: ${form.tourName}\n
+                Sana: ${new Date(form.tourDate).toLocaleDateString()}\n
+                Ism: ${form.name}\n
+                Telefon: +998${form.phone}\n
+                Сообщение: ${form.message}
+               `;
 
           const botToken = "7997128244:AAHXk98iBsvMoLB-EiOzEM90eThDRRwQMA4";
           const chatId = "-1002519373404";
