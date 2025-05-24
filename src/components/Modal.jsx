@@ -10,7 +10,6 @@ import {
   FaMapMarkedAlt,
   FaTimes,
 } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { InputField } from "./InputFiels";
 import { TextAreaField } from "./TextAreaField";
 
