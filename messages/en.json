@@ -11,7 +11,28 @@
     "selectDate": "Select a date",
     "order": "Order"
   },
-
+  "TourPackages": {
+    "silkRoadAdventure": "Silk Road Adventure",
+    "samarkandHeritage": "Samarkand Heritage Tour",
+    "bukharaMystery": "Bukhara Mystery Tour",
+    "tashkentCityBreak": "Tashkent City Break",
+    "mountainEscape": "Mountain Escape",
+    "desertExpedition": "Desert Expedition",
+    "khivaAncientWonders": "Khiva Ancient Wonders",
+    "ferganaValleyExplorer": "Fergana Valley Explorer",
+    "aralSeaAdventure": "Aral Sea Adventure",
+    "culturalUzbekistan": "Cultural Uzbekistan",
+    "historicCitiesTour": "Historic Cities Tour",
+    "uzbekCuisineTour": "Uzbek Cuisine Tour",
+    "natureAndWildlife": "Nature and Wildlife",
+    "familyHoliday": "Family Holiday",
+    "margilonRishtonKokand": "Margilan — Rishton — Kokand",
+    "samarkandBukhara": "Samarkand + Bukhara",
+    "kokandRishton": "Kokand — Rishton",
+    "sharmElSheikh": "Sharm El Sheikh",
+    "dubai": "Dubai",
+    "maldives": "Maldives"
+  },
   "SpecialSuggest": {
     "title": "SPECIAL PACKAGES",
     "description": "Enjoy our special travel packages tailored to your needs.",

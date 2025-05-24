@@ -1,4 +1,26 @@
 {
+  "TourPackages": {
+    "silkRoadAdventure": "Приключение на Шелковом пути",
+    "samarkandHeritage": "Тур по наследию Самарканда",
+    "bukharaMystery": "Тайны Бухары",
+    "tashkentCityBreak": "Тур по Ташкенту",
+    "mountainEscape": "Отдых в горах",
+    "desertExpedition": "Экспедиция в пустыню",
+    "khivaAncientWonders": "Древние чудеса Хивы",
+    "ferganaValleyExplorer": "Исследование Ферганской долины",
+    "aralSeaAdventure": "Приключение на Аральском море",
+    "culturalUzbekistan": "Культурный Узбекистан",
+    "historicCitiesTour": "Тур по историческим городам",
+    "uzbekCuisineTour": "Тур по узбекской кухне",
+    "natureAndWildlife": "Природа и дикая жизнь",
+    "familyHoliday": "Семейный отдых",
+    "margilonRishtonKokand": "Маргилан — Риштан — Коканд",
+    "samarkandBukhara": "Самарканд + Бухара",
+    "kokandRishton": "Коканд — Риштан",
+    "sharmElSheikh": "Шарм-эль-Шейх",
+    "dubai": "Дубай",
+    "maldives": "Мальдивские острова"
+  },
   "Header": {
     "locations": "Знаменитые места",
     "opportunities": "Возможности",

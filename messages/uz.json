@@ -81,5 +81,27 @@
       "message": "Xabaringizni qoldiring",
       "send": "Jo'natish"
     }
+  },
+  "TourPackages": {
+    "silkRoadAdventure": "Ipak Yo'li Sarguzashti",
+    "samarkandHeritage": "Samarqand Merosi Turi",
+    "bukharaMystery": "Buxoro Sirlari Sayohati",
+    "tashkentCityBreak": "Toshkent Shahar Turi",
+    "mountainEscape": "Tog'lar Bag'rida Dam",
+    "desertExpedition": "Cho'l Ekspeditsiyasi",
+    "khivaAncientWonders": "Xiva Qadimiy Mo'jizalari",
+    "ferganaValleyExplorer": "Farg'ona Vodiysi Tadqiqoti",
+    "aralSeaAdventure": "Orol Dengizi Sarguzashti",
+    "culturalUzbekistan": "Madaniy O'zbekiston",
+    "historicCitiesTour": "Tarixiy Shaharlar Turi",
+    "uzbekCuisineTour": "O'zbek Taomlari Turi",
+    "natureAndWildlife": "Tabiat va Yovvoyi Hayot",
+    "familyHoliday": "Oila Uchun Dam Olish",
+    "margilonRishtonKokand": "Marg'ilon — Rishton — Qo'qon",
+    "samarkandBukhara": "Samarqand + Buxoro",
+    "kokandRishton": "Qo'qon — Rishton",
+    "sharmElSheikh": "Sharm al-Shayx",
+    "dubai": "Dubay",
+    "maldives": "Maldiv orollari"
   }
 }
