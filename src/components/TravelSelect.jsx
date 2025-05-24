@@ -1,11 +1,19 @@
 "use client";
 
 import React from "react";
-
 import Select from "react-select";
 import { tourPackages } from "./data";
+import { useTranslations } from "next-intl";
 
 export const TravelSelect = ({ label }) => {
+  const t = useTranslations("TourPackages");
+  const formatOptions = (options) => {
+    return options.map((option) => ({
+      ...option,
+      label: t(option.translationKey),
+    }));
+  };
+  const formattedOptions = formatOptions(tourPackages);
   return (
     <>
       <label className="grow">
@@ -14,10 +22,12 @@ export const TravelSelect = ({ label }) => {
           className="basic-single"
           classNamePrefix="select"
           defaultValue={
-            tourPackages[Math.floor(Math.random() * tourPackages.length)]
+            formattedOptions[
+              Math.floor(Math.random() * formattedOptions.length)
+            ]
           }
           name="region"
-          options={tourPackages}
+          options={formattedOptions}
           maxMenuHeight={200}
         />
       </label>
